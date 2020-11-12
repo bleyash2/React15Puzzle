@@ -1,0 +1,38 @@
+.puzzleWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.puzzle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2.5px dashed #4bb543;
+  margin: 2.5rem;
+  height: 100%;
+}
+
+.puzzleTile {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.moveable {
+  background-color: #4bb543;
+}
+
+.moveable:hover {
+  cursor: pointer;
+  background-color: #265d22;
+}
+
+.puzzleTile.emptySpace {
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: rgba(0, 0, 0, 0.16);
+}
